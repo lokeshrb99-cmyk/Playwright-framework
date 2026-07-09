@@ -15,7 +15,7 @@ await expect(page.locator("div[class='product-grid home-page-product-grid'] stro
 //await expect(page.locator('text=Welcome to our store')).toBeVisible({timeout:10000});
 
 //Non retrying assertions (executes immediately no retry)
-
+//Git changes
 const title=await page.title();
 expect(title.includes("Demo Web Shop")).toBeTruthy();//No autp retry
 
