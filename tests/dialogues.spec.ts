@@ -59,7 +59,7 @@ page.on('dialog', (dialog)=>{
 }
 )
 //------------------------------------------------------------
-test.only("Prompt dialog", async({page})=>
+test("Prompt dialog", async({page})=>
 {
 
     await page.goto("https://testautomationpractice.blogspot.com/");
