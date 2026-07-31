@@ -19,7 +19,7 @@ await expect(maleradio).toBeChecked();
 }
 
 )
-test.only("CheckBox actions", async ({ page }) => {
+test("CheckBox actions", async ({ page }) => {
 
   await page.goto("https://testautomationpractice.blogspot.com/");
 

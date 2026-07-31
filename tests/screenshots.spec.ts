@@ -26,7 +26,7 @@ await page.locator(".product-grid.home-page-product-grid").screenshot({path:'scr
 )
 
 
-test.only("Screenshots from config", async({page})=>
+test("Screenshots from config", async({page})=>
 {
     await page.goto('https://demoblaze.com/');
   await expect(page.getByRole('link', { name: 'PRODUCT STORE' })).toBeVisible();
