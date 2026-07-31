@@ -19,7 +19,7 @@ await expect(page).toHaveTitle("Google");
     }
 
 )
-//Skip
+//Skip the test
 test.skip("Test2", async({page})=>
     {
 await page.goto("https://www.google.com/");

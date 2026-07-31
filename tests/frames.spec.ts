@@ -34,7 +34,7 @@ test("Inner Frames demo", async({page})=>
 
         console.log("No. of frames present on the page: ", frames.length);
 
-        //Approach1. Using page.frame
+        //Approach2. Using page.framelocator
         await page.frameLocator("[src='frame_1.html']").locator("[name='mytext1']").fill("Virat");//Page.framelocator is allows any kind of locator of the frame
         
         
@@ -47,7 +47,7 @@ test("Inner Frames demo", async({page})=>
 
     })
 
-test.only("Inner/child Frames demo", async({page})=>
+test("Inner/child Frames demo", async({page})=>
     {
         await page.goto("http://docs.oracle.com/javase/8/docs/api/");
 
