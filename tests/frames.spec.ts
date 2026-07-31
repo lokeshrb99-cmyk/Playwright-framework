@@ -47,7 +47,7 @@ test("Inner Frames demo", async({page})=>
 
     })
 
-test.only("Inner/child Frames demo", async({page})=>
+test("Inner/child Frames demo", async({page})=>
     {
         await page.goto("http://docs.oracle.com/javase/8/docs/api/");
 
