@@ -1,13 +1,13 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, Locator } from '@playwright/test';
 
-test('test', async ({ page,context }) => {
+test('tracing test', async ({page, context}) => {
 
   //await context.tracing.start({screenshots:true, snapshots:true});
 
-  await context.tracing.start({
-  screenshots: true,
-  snapshots: true,
-});
+ // await context.tracing.start({
+  //screenshots: true,
+  //snapshots: true,
+//});
 
   await page.goto('https://demoblaze.com/');
   await expect(page.getByRole('link', { name: 'PRODUCT STORE' })).toBeVisible();
@@ -21,6 +21,6 @@ test('test', async ({ page,context }) => {
  // await expect(page.locator('#nameofuser')).toContainText('Welcome pavanol');
  // await expect(page.getByRole('link', { name: 'Log out' })).toBeVisible();
  // await page.getByRole('link', { name: 'Log out' }).click();
-  await context.tracing.stop({path:'trace.zip'});
+  await context.tracing.stop({path:'trace.zip1'});
   
 });
